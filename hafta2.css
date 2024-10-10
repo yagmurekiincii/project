@@ -1,0 +1,35 @@
+*{
+    background-color: rgb(163, 161, 159);
+
+}
+
+h1{
+    margin: 30px;
+}
+
+img{
+    background-color: rgb(233, 219, 200);
+    margin: 20px;
+    float: left;
+}
+
+div{
+    background-color: rgb(233, 219, 200);
+    padding: 50px;
+    width: 1350px;
+    height: 500px;
+
+}
+p{
+    background-color: rgb(233, 219, 200);
+    float: right;
+    width: 600px;
+    font-size: 25px;
+    margin: 70px;
+}
+
+.box{
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px #464444;
+    margin: 20px;
+}
