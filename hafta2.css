@@ -24,7 +24,7 @@ p{
     background-color: rgb(233, 219, 200);
     float: right;
     width: 600px;
-    font-size: 25px;
+    font-size: 20px;
     margin: 70px;
 }
 
@@ -32,4 +32,9 @@ p{
     border-radius: 10px;
     box-shadow: 5px 5px 6px #464444;
     margin: 20px;
+}
+
+audio{
+    border-radius: 30px;
+    float: right;
 }
