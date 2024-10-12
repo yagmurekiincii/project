@@ -1,5 +1,6 @@
 *{
     background-color: rgb(163, 161, 159);
+    margin: 20px;
 
 }
 div{
@@ -13,5 +14,15 @@ div{
     padding: 50px;
     width: 750px;
     height: 750px;
+    float: left;
+}
+
+.box2{
+    float: right;
+    background-color: rgb(233, 219, 200);
+    padding: 50px;
+    width: 500px;
+    height: 400px;
+    
 }
 
