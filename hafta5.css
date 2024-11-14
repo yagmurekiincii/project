@@ -1,0 +1,16 @@
+*{
+    margin: 20px;
+
+}
+div{
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px #464444;
+    margin: 20px;
+}
+
+.box{
+    background-color: rgb(233, 219, 200);
+    padding: 50px;
+    width: 90%;
+    height: 500px;
+}
