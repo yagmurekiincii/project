@@ -1,0 +1,29 @@
+P{
+    margin: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #9fa0a0;
+    border-radius: 6px;
+    outline: none;
+    }
+
+.box{
+    
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px #464444;
+    margin: 20px;
+}
+
+div{
+    background-color: rgb(233, 219, 200);
+    padding: 50px;
+    width: 1350px;
+    height: 500px;
+
+}
