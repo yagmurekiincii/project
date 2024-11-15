@@ -37,7 +37,7 @@ body {
 
 
 .a { 
-    background-color: navy; grid-column: span 4;
+    background-color: navy; grid-column: span 3;
  }
 .b { background-color: orange;
 
@@ -47,11 +47,11 @@ body {
 }
 .d { background-color: red; 
 }
-.e { background-color: rgb(206, 206, 97); grid-column: span 3; 
+.e { background-color: rgb(206, 206, 97); grid-column: span 2; 
 
 }
 .f { background-color: purple; 
 }
-.g { background-color: limegreen; grid-column: span 4;
+.g { background-color: limegreen; grid-column: span 3;
 
 }
