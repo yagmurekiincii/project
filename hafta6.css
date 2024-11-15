@@ -16,6 +16,7 @@ body {
     display: grid;
     gap: 5px;
     height: 200px;
+    width: 500px;
     transition: 2s;
 }
 
@@ -37,27 +38,20 @@ body {
 
 .a { 
     background-color: navy; grid-column: span 4;
-    width: 610px;
  }
 .b { background-color: orange;
-    width: 200px ;
 
  }
 .c { background-color: green;
-    width: 200px;
 
 }
 .d { background-color: red; 
-    width: 200px;
 }
 .e { background-color: rgb(206, 206, 97); grid-column: span 2; 
-    width: 405px;
 
 }
 .f { background-color: purple; 
-    width: 200px;
 }
 .g { background-color: limegreen; grid-column: span 4;
-    width: 610px;
 
 }
