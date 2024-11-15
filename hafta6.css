@@ -47,7 +47,7 @@ body {
 }
 .d { background-color: red; 
 }
-.e { background-color: rgb(206, 206, 97); grid-column: span 2; 
+.e { background-color: rgb(206, 206, 97); grid-column: span 4; 
 
 }
 .f { background-color: purple; 
