@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedi ve Köpek</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        img {
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selam </h1>
+    <img id="animalImage" src="selam gif.gif" alt="Selam Fotoğrafı">
+    <div>
+        <button onclick="showkedi()">Kedi</button>
+        <button onclick="showkopek()">Köpek</button>
+        <button onclick="showSelam()">Geri</button>
+    </div>
+
+    <script>
+        function showkedi() {
+            const image = document.getElementById("animalImage");
+            image.src = "kedi gif.gif"; 
+            image.alt = "Kedi Fotoğrafı";
+        }
+
+        function showkopek() {
+            const image = document.getElementById("animalImage");
+            image.src = "köpek gif.gif"; 
+            image.alt = "Köpek Fotoğrafı";
+        }
+
+        function showSelam() {
+            const image = document.getElementById("animalImage");
+            image.src = "img/selam.jpg"; 
+            image.alt = "Selam Fotoğrafı";
+        }
+    </script>
+</body>
+</html>
