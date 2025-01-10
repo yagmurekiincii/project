@@ -2,114 +2,113 @@
     "htmlQuestions": [
       {
         "id": 1,
-        "question": "HTML'in en son sürümü nedir?",
+        "question": "HTML nedir?",
         "options": [
-          "A: HTML4",
-          "B: HTML5",
-          "C: XHTML",
-          "D: HTML3.2"
+          "A: HyperText Markup Language",
+          "B: Home Tool Markup Language",
+          "C: Hyperlinks and Text Markup Language",
+          "D: HyperText Machine Language"
         ],
-        "answer": "B"
+        "answer": "A"
       },
       {
         "id": 2,
-        "question": "HTML'de bir bağlantıyı yeni bir sekmede açmak için hangi özellik kullanılır?",
+        "question": "HTML dokümanı için standart başlangıç etiketi hangisidir?",
         "options": [
-          "A: newtab=\"true\"",
-          "B: target=\"_blank\"",
-          "C: open=\"new\"",
-          "D: window=\"newtab\""
+          "A: <html>",
+          "B: <head>",
+          "C: <title>",
+          "D: <body>"
         ],
-        "answer": "B"
+        "answer": "A"
       },
       {
         "id": 3,
-        "question": "HTML'de liste oluşturmak için hangi etiket kullanılır?",
+        "question": "Bir HTML dokümanındaki başlık etiketleri hangi sıralamaya sahiptir?",
         "options": [
-          "A: <list>",
-          "B: <ul> veya <ol>",
-          "C: <li>",
-          "D: <item>"
+          "A: <h1>, <h2>, <h3>, <h4>, <h5>, <h6>",
+          "B: <h6>, <h5>, <h4>, <h3>, <h2>, <h1>",
+          "C: <h1>, <h3>, <h2>, <h4>, <h5>, <h6>",
+          "D: <h2>, <h1>, <h3>, <h4>, <h5>, <h6>"
         ],
-        "answer": "B"
+        "answer": "A"
       },
       {
         "id": 4,
-        "question": "HTML'de bir metni kalın yapmak için hangi etiket kullanılır?",
+        "question": "Hangi HTML etiketi paragraf oluşturmak için kullanılır?",
         "options": [
-          "A: <b>",
-          "B: <strong>",
-          "C: Her ikisi de",
-          "D: Hiçbiri"
+          "A: <p>",
+          "B: <paragraph>",
+          "C: <par>",
+          "D: <pg>"
         ],
-        "answer": "C"
+        "answer": "A"
       },
       {
         "id": 5,
-        "question": "Bir HTML belgesinde karakter kodlamasını belirtmek için hangi etiket kullanılır?",
+        "question": "Bir HTML sayfasında bir bağlantı oluşturmak için hangi etiket kullanılır?",
         "options": [
-          "A: <charset>",
-          "B: <meta>",
-          "C: <head>",
-          "D: <encoding>"
+          "A: <link>",
+          "B: <a>",
+          "C: <href>",
+          "D: <url>"
         ],
         "answer": "B"
       },
       {
         "id": 6,
-        "question": "HTML'de arka plan rengi ayarlamak için hangi özellik kullanılır?",
+        "question": "HTML'de resim eklemek için hangi etiket kullanılır?",
         "options": [
-          "A: background-color",
-          "B: bgcolor",
-          "C: color",
-          "D: background"
+          "A: <image>",
+          "B: <img>",
+          "C: <pic>",
+          "D: <src>"
         ],
         "answer": "B"
       },
       {
         "id": 7,
-        "question": "HTML'de bir tablo hücresini birden fazla sütuna yaymak için hangi özellik kullanılır?",
+        "question": "Bir HTML tablosu hangi etiketle başlar?",
         "options": [
-          "A: rowspan",
-          "B: colspan",
-          "C: cellspan",
-          "D: merge"
+          "A: <table>",
+          "B: <tr>",
+          "C: <td>",
+          "D: <tab>"
         ],
-        "answer": "B"
+        "answer": "A"
       },
       {
         "id": 8,
-        "question": "Bir HTML dokümanında, bir öğeye kimlik atamak için hangi özellik kullanılır?",
+        "question": "Bir HTML formunun içine hangi etiket veri girişi için kullanılır?",
         "options": [
-          "A: class",
-          "B: name",
-          "C: id",
-          "D: key"
-        ],
-        "answer": "C"
-      },
-      {
-        "id": 9,
-        "question": "HTML'de bir medya dosyasını (örneğin bir video) eklemek için hangi etiket kullanılır?",
-        "options": [
-          "A: <media>",
-          "B: <video>",
-          "C: <source>",
-          "D: <embed>"
+          "A: <form>",
+          "B: <input>",
+          "C: <submit>",
+          "D: <textarea>"
         ],
         "answer": "B"
       },
       {
-        "id": 10,
-        "question": "HTML'de bir düğme oluşturmak için hangi etiket kullanılır?",
+        "id": 9,
+        "question": "Bir HTML belgesine CSS dosyası bağlamak için hangi etiket kullanılır?",
         "options": [
-          "A: <button>",
-          "B: <input type=\"button\">",
-          "C: Her ikisi de",
-          "D: Hiçbiri"
+          "A: <style>",
+          "B: <css>",
+          "C: <link>",
+          "D: <stylesheet>"
         ],
         "answer": "C"
+      },
+      {
+        "id": 10,
+        "question": "Bir HTML dokümanında yorum nasıl eklenir?",
+        "options": [
+          "A: <!-- Yorum -->",
+          "B: // Yorum",
+          "C: /* Yorum */",
+          "D: ' Yorum"
+        ],
+        "answer": "A"
       }
     ]
   }
-  
