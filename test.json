@@ -1,0 +1,115 @@
+{
+    "htmlQuestions": [
+      {
+        "id": 1,
+        "question": "HTML'in en son sürümü nedir?",
+        "options": [
+          "A: HTML4",
+          "B: HTML5",
+          "C: XHTML",
+          "D: HTML3.2"
+        ],
+        "answer": "B"
+      },
+      {
+        "id": 2,
+        "question": "HTML'de bir bağlantıyı yeni bir sekmede açmak için hangi özellik kullanılır?",
+        "options": [
+          "A: newtab=\"true\"",
+          "B: target=\"_blank\"",
+          "C: open=\"new\"",
+          "D: window=\"newtab\""
+        ],
+        "answer": "B"
+      },
+      {
+        "id": 3,
+        "question": "HTML'de liste oluşturmak için hangi etiket kullanılır?",
+        "options": [
+          "A: <list>",
+          "B: <ul> veya <ol>",
+          "C: <li>",
+          "D: <item>"
+        ],
+        "answer": "B"
+      },
+      {
+        "id": 4,
+        "question": "HTML'de bir metni kalın yapmak için hangi etiket kullanılır?",
+        "options": [
+          "A: <b>",
+          "B: <strong>",
+          "C: Her ikisi de",
+          "D: Hiçbiri"
+        ],
+        "answer": "C"
+      },
+      {
+        "id": 5,
+        "question": "Bir HTML belgesinde karakter kodlamasını belirtmek için hangi etiket kullanılır?",
+        "options": [
+          "A: <charset>",
+          "B: <meta>",
+          "C: <head>",
+          "D: <encoding>"
+        ],
+        "answer": "B"
+      },
+      {
+        "id": 6,
+        "question": "HTML'de arka plan rengi ayarlamak için hangi özellik kullanılır?",
+        "options": [
+          "A: background-color",
+          "B: bgcolor",
+          "C: color",
+          "D: background"
+        ],
+        "answer": "B"
+      },
+      {
+        "id": 7,
+        "question": "HTML'de bir tablo hücresini birden fazla sütuna yaymak için hangi özellik kullanılır?",
+        "options": [
+          "A: rowspan",
+          "B: colspan",
+          "C: cellspan",
+          "D: merge"
+        ],
+        "answer": "B"
+      },
+      {
+        "id": 8,
+        "question": "Bir HTML dokümanında, bir öğeye kimlik atamak için hangi özellik kullanılır?",
+        "options": [
+          "A: class",
+          "B: name",
+          "C: id",
+          "D: key"
+        ],
+        "answer": "C"
+      },
+      {
+        "id": 9,
+        "question": "HTML'de bir medya dosyasını (örneğin bir video) eklemek için hangi etiket kullanılır?",
+        "options": [
+          "A: <media>",
+          "B: <video>",
+          "C: <source>",
+          "D: <embed>"
+        ],
+        "answer": "B"
+      },
+      {
+        "id": 10,
+        "question": "HTML'de bir düğme oluşturmak için hangi etiket kullanılır?",
+        "options": [
+          "A: <button>",
+          "B: <input type=\"button\">",
+          "C: Her ikisi de",
+          "D: Hiçbiri"
+        ],
+        "answer": "C"
+      }
+    ]
+  }
+  
