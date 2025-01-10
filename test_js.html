@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Uygulaması (json)</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+            background-color: #ffe4e1;
+            color: #d81b60;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #d81b60;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .question {
+            background: #ffc1e3;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(216, 27, 96, 0.3);
+        }
+
+        .question h2 {
+            margin-bottom: 10px;
+            color: #d81b60;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #d81b60;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        button:hover {
+            background-color: #ad1457;
+        }
+
+        #popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background: #ffc1e3;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(216, 27, 96, 0.3);
+            text-align: center;
+            display: none;
+            z-index: 1000;
+        }
+
+        #popup h2 {
+            font-size: 24px;
+            color: #d81b60;
+        }
+
+        #popup p {
+            font-size: 18px;
+            color: #d81b60;
+        }
+
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            z-index: 900;
+        }
+
+        #close-popup {
+            padding: 10px 20px;
+            background-color: #d81b60;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #close-popup:hover {
+            background-color: #ad1457;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Test Uygulaması</h1>
+        <button id="start-test">Testi Çöz</button>
+        <div id="questions-container"></div>
+    </div>
+
+    <div id="popup">
+        <h2>Test Sonucu</h2>
+        <p id="popup-result"></p>
+        <button id="close-popup">Kapat</button>
+    </div>
+
+    <div id="overlay"></div>
+
+    <script>
+        document.getElementById('start-test').addEventListener('click', function () {
+            fetch('https://raw.githubusercontent.com/yamurekiincii/project/main/test.json')
+                .then(response => response.json())
+                .then(data => {
+                    const questionsContainer = document.getElementById('questions-container');
+                    questionsContainer.innerHTML = '';
+                    data.htmlQuestions.forEach((question, index) => {
+                        const questionElement = document.createElement('div');
+                        questionElement.classList.add('question');
+
+                        const title = document.createElement('h2');
+                        title.textContent = `${index + 1}. ${question.question}`;
+                        questionElement.appendChild(title);
+
+                        const optionsContainer = document.createElement('div');
+                        question.options.forEach(option => {
+                            const optionLabel = document.createElement('label');
+                            const optionInput = document.createElement('input');
+                            optionInput.type = 'radio';
+                            optionInput.name = `question-${index}`;
+                            optionInput.value = option[0];
+                            optionLabel.appendChild(optionInput);
+                            optionLabel.appendChild(document.createTextNode(option));
+                            optionsContainer.appendChild(optionLabel);
+                            optionsContainer.appendChild(document.createElement('br'));
+                        });
+                        questionElement.appendChild(optionsContainer);
+
+                        questionsContainer.appendChild(questionElement);
+                    });
+
+                    const submitButton = document.createElement('button');
+                    submitButton.textContent = 'Sonucu Gör';
+                    questionsContainer.appendChild(submitButton);
+
+                    submitButton.addEventListener('click', function () {
+                        let score = 0;
+                        data.htmlQuestions.forEach((question, index) => {
+                            const selectedOption = document.querySelector(`input[name="question-${index}"]:checked`);
+                            if (selectedOption && selectedOption.value === question.answer) {
+                                score++;
+                            }
+                        });
+
+                        const popup = document.getElementById('popup');
+                        const popupResult = document.getElementById('popup-result');
+                        popupResult.textContent = `Sonuç: ${score}/${data.htmlQuestions.length} doğru!`;
+                        popup.style.display = 'block';
+                        document.getElementById('overlay').style.display = 'block';
+                    });
+                })
+                .catch(error => console.error('Error:', error));
+        });
+
+        document.getElementById('close-popup').addEventListener('click', function () {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        });
+
+        document.getElementById('overlay').addEventListener('click', function () {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>
